@@ -5,14 +5,13 @@ public class BaseProduct {
 	protected String name;
 	protected Float price;
 	protected Float savings=0f;
-	protected int count;  // used to count how many items in the basket
+	protected int count; 
 	
 	
 	public void increaseCount(){
 		count++;
 	}
 	
-	// Constructor for Basket
 	public BaseProduct(String name) {
 		this.name = name;
 	}

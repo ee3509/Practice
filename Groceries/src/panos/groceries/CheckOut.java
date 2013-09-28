@@ -26,7 +26,7 @@ public class CheckOut {
 	
 	public CheckOut() {
 		//Manually populate basket with goods
-		basket = setUpBasket(basket);
+		setUpBasket(basket);
 		// Setup the offers on the products we have
 		setUpPricesAndOffers();
 		// Calculate the totals before offers
