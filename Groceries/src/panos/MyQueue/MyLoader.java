@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class MyLoader extends Thread {
 
-	private Long loaderDelay = 800L;
-	private int max_Qsize = 5;
+	private Long loaderDelay = 300L;
+	private int max_Qsize = 5000;
 	
 	public Long getLoaderDelay() {
 		return loaderDelay;
@@ -41,7 +41,7 @@ public class MyLoader extends Thread {
 				}
 			}
 			try {
-				sleep(loaderDelay + r.nextInt(700) );
+				sleep(loaderDelay + r.nextInt(300) );
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
