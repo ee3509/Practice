@@ -1,6 +1,7 @@
 package panos.MyQueue;
 
 import java.util.Queue;
+import java.util.Random;
 
 public class MyLoader extends Thread {
 
@@ -31,6 +32,7 @@ public class MyLoader extends Thread {
 
 	@Override
 	public void run() {
+		Random r = new Random();
 		super.run();
 		while (true) {
 			synchronized (q) {
@@ -39,7 +41,7 @@ public class MyLoader extends Thread {
 				}
 			}
 			try {
-				sleep(loaderDelay);
+				sleep(loaderDelay + r.nextInt(700) );
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
