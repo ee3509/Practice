@@ -13,10 +13,10 @@ public class Main {
 		MyLoader myLoader = new MyLoader(queue);
 		MyDispatcher dispatcher = new MyDispatcher(queue);
 		
-		myLoader.setLoaderDelay(900l);
+		myLoader.setLoaderDelay(2l);
 		myLoader.start();
 		
-		dispatcher.setDispatcherDelay(1000l);
+		dispatcher.setDispatcherDelay(350l);
 		dispatcher.start();
 		
 	}
